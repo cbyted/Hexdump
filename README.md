@@ -9,7 +9,6 @@ Using GCC:
 ```bash
 gcc -Wall -Wextra -o hexdump main.c
 ```
-```
 
 ## Usage
 
@@ -29,5 +28,4 @@ echo "Hello, world" | ./hexdump
 
 ```text
 00000000  48 6f 6c 61 2c 20 6d 75   6e 64 6f 0a               [ H o l a , . m u n d o . ]
-```
 ```
