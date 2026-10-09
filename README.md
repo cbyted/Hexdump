@@ -1,37 +1,33 @@
 # Hexdump
 
-Pequeño programa de línea de comandos escrito en C que lee datos desde la entrada estándar y los muestra en formato hexadecimal.
+A small command-line program written in C that reads data from standard input and displays it in hexadecimal format.
 
-## Compilar
+## Build
 
-Con GCC:
+Using GCC:
 
 ```bash
 gcc -Wall -Wextra -o hexdump main.c
 ```
-
-Si el proyecto tiene varios archivos `.c`:
-
-```bash
-gcc -Wall -Wextra -o hexdump src/*.c
 ```
 
-## Uso
+## Usage
 
-Pasa el contenido al programa mediante una tubería:
-
-```bash
-cat archivo | ./hexdump
-```
-
-También puedes introducir texto directamente:
+Pipe data to the program:
 
 ```bash
-echo "Hola, mundo" | ./hexdump
+cat file | ./hexdump
 ```
 
-## Ejemplo de salida
+You can also pipe text directly:
+
+```bash
+echo "Hello, world" | ./hexdump
+```
+
+## Example output
 
 ```text
 00000000  48 6f 6c 61 2c 20 6d 75   6e 64 6f 0a               [ H o l a , . m u n d o . ]
+```
 ```
